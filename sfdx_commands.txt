@@ -1,0 +1,5 @@
+sfdx force:mdapi:retrieve -p TestCamping -s -r export/TestCamping -u DevHub
+
+sfdx force:mdapi:convert -r .\export\TestCamping -d testCamping
+
+sfdx force:source:push -u TestCamping
